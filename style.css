@@ -1,0 +1,211 @@
+/* Color Palette:
+#273043 Prussian Blue (Background)
+#9197AE Cool Grey (Secondary/Hover)
+#EFF6EE Mint Cream (Text)
+#DD0426 Rojo (Accent 1)
+#F02D3A Imperial Red (Accent 2/Hover)
+https://prismic.io/blog/css-scroll-effects
+*/
+
+/* --- Global Styling --- */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #EFF6EE; 
+}
+
+.page {
+    background-color: #273043;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    background-color: rgba(39, 48, 67, 0.95); 
+    position: sticky;
+    top: 0;
+    padding: 1rem 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.nav-link {
+    color: #EFF6EE;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 0 1.5rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F02D3A; 
+    border-bottom: 2px solid #F02D3A;
+}
+
+/* --- General Section Styling --- */
+.section {
+    padding: 4rem 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 2.5rem;
+    color: #DD0426; 
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #9197AE;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* --- Intro Section (Home) --- */
+.intro-section {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro {
+    font-style: normal;
+    padding-top: 5rem; 
+}
+
+.intro-name {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: clamp(3rem, 10vw, 5rem); 
+    color: #DD0426; 
+    margin-bottom: 0.5rem;   
+}
+
+.intro-desc {
+    color: #F02D3A; 
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 300;
+}
+
+/* --- About Me Section --- */
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.skills-list {
+    max-width: 600px;
+    margin: 2rem auto 0 auto;
+    padding: 1rem;
+    border: 1px solid #9197AE;
+    border-radius: 8px;
+}
+
+.skills-list h3 {
+    color: #DD0426; 
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 2rem;
+}
+
+.skills-list li {
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.skill {
+    font-weight: bold;
+    color: #F02D3A; 
+}
+
+/* --- Projects Section --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #3f475d; 
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-left: 5px solid #DD0426; 
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: #4b546e;
+}
+
+.project-title {
+    color: #DD0426;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.project-summary {
+    color: #EFF6EE;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.project-link {
+    color: #F02D3A; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #DD0426; 
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #273043;
+    padding: 2rem 0;
+    text-align: center;
+    color: #9197AE;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: #DD0426; 
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #F02D3A; 
+}
